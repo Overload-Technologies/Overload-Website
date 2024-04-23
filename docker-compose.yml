@@ -1,0 +1,8 @@
+version: "3.8"
+
+services:
+    client:
+        pull_policy: build
+        build: .
+        ports:
+            - "${HTTP_PORT:-}:80"
