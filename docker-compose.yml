@@ -4,6 +4,7 @@ services:
   nginx:
     pull_policy: build
     build: .
+    restart: unless-stopped
     healthcheck:
       test: curl --fail http://localhost || exit 1
     expose:
