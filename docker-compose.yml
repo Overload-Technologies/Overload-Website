@@ -4,5 +4,7 @@ services:
     client:
         pull_policy: build
         build: .
+        healthcheck:
+            test: curl --fail http://localhost || exit 1
         expose:
             - 80
