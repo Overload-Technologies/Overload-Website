@@ -1,0 +1,15 @@
+# This docker-compose file is an override that can be used if you do not want to publish the port of the web service,
+# but instead want to use a network. It provides an alternative way to access the web service without exposing it to the host.
+# By using a network, you can restrict access to the web service to only other services within the same network.
+
+version: '3.8'
+
+services:
+  nginx:
+    networks:
+      - default
+      - webproxy
+
+networks:
+  webproxy:
+    external: true
