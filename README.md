@@ -1,6 +1,10 @@
 # Overload Website
-Open-Source repository for [Overload](https://github.com/adriengivry/Overload) website:
+Public-facing website for [Overload](https://github.com/adriengivry/Overload).
 
-> [overloadengine.org](https://overloadengine.org).
+Live at: [overloadengine.org](https://overloadengine.org).
 
+## Deployment
+Deployment is, at the time, manually performed through a third-party service.
+
+## Contributing
 Contributions are more than welcome!
