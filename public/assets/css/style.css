@@ -11,7 +11,6 @@
 }
 
 h1 {
-  font-family: "Ruda";
   font-weight: bolder;
 }
 
@@ -21,10 +20,14 @@ h3 {
 }
 
 body {
-  font-family: "Ruda", sans-serif;
+  font-family: "Tomorrow", sans-serif;
   background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../img/bg-masthead.gif);
   background-size: cover;
   background-position: center;
+}
+
+.lead {
+  font-size: 1.05rem;
 }
 
 .cover-container {
