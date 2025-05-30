@@ -1,3 +1,8 @@
+:root {
+  --ov-accent: #ffbb00;
+  --ov-accent-rgb: 255, 187, 0;
+}
+
 .btn-secondary,
 .btn-secondary:hover,
 .btn-secondary:focus {
@@ -5,7 +10,18 @@
   text-shadow: none; /* Prevent inheritance from `body` */
 }
 
+h1 {
+  font-family: "Ruda";
+  font-weight: bolder;
+}
+
+h3 {
+  font-weight: lighter;
+  color: #fff;
+}
+
 body {
+  font-family: "Ruda", sans-serif;
   background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../img/bg-masthead.gif);
   background-size: cover;
   background-position: center;
@@ -52,5 +68,15 @@ body {
 }
 
 .ov-accent {
-  color:#ffbb00;
+  color: var(--ov-accent);
+}
+
+.glow {
+  text-align: center;
+  text-shadow: 
+    0 0 15px rgba(255, 255, 255, 0.8), 
+    0 0 30px rgba(255, 255, 255, 0.6), 
+    0 0 45px rgba(var(--ov-accent-rgb), 1.0), 
+    0 0 70px rgba(var(--ov-accent-rgb), 0.8), 
+    0 0 100px rgba(var(--ov-accent-rgb), 0.6);
 }
