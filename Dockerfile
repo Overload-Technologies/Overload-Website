@@ -1,7 +1,10 @@
+FROM hugomods/hugo:exts AS builder
+
+WORKDIR /src
+COPY . .
+RUN hugo --minify
+
 FROM nginx:alpine
-
-WORKDIR /etc/nginx/conf.d
-COPY site.conf default.conf
-
-WORKDIR /public
-COPY public/ .
+COPY site.conf /etc/nginx/conf.d/default.conf
+COPY --from=builder /src/public/ /public/
+EXPOSE 80

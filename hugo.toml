@@ -1,0 +1,3 @@
+baseURL = "https://overloadengine.org/"
+title = "Overload"
+disableKinds = ["taxonomy", "term"]
